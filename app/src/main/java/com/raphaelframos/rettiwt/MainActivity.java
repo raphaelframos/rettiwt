@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewFeed.setLayoutManager(new LinearLayoutManager(this));
         recyclerViewFeed.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
-        Mensagem mensagem1 = new Mensagem("Raphael Ramos", "Flamengo minha vida", "http://br.web.img3.acsta.net/c_215_290/pictures/19/03/19/17/23/0985270.jpg");
+        Mensagem mensagem1 = new Mensagem("Raphael Ramos", "Flamengo minha vida", "https://f.i.uol.com.br/fotografia/2018/07/26/15326245925b59fed0b9748_1532624592_3x2_md.jpg");
         Mensagem mensagem2 = new Mensagem("Rodolfo", "Olá, tudo bem?", "https://static.sbt.com.br/noticias/images/142774.jpg");
         ArrayList<Mensagem> mensagens = new ArrayList<>();
         mensagens.add(mensagem1);

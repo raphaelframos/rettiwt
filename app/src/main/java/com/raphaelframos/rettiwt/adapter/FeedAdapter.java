@@ -9,6 +9,8 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CircleCrop;
 import com.raphaelframos.rettiwt.R;
 import com.raphaelframos.rettiwt.model.Mensagem;
 
@@ -54,6 +56,10 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedViewHolder
         public void set(Mensagem mensagem) {
             textViewNome.setText(mensagem.getNome());
             textViewMensagem.setText(mensagem.getMensagemInvertida());
+            Glide.with(itemView.getContext())
+                    .load(mensagem.getFoto())
+                    .transform(new CircleCrop())
+                    .into(imageViewFoto);
         }
     }
 }
