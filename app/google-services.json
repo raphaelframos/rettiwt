@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "571776136069",
+    "firebase_url": "https://rettiwt-81676.firebaseio.com",
+    "project_id": "rettiwt-81676",
+    "storage_bucket": "rettiwt-81676.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571776136069:android:55a8648ffe0016c1284aec",
+        "android_client_info": {
+          "package_name": "com.raphaelframos.rettiwt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571776136069-2vqj334ro8pram4ij08legurd8967bg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-wmuxX6ZmXAGriZcUe_v1FaHdILSo9QE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571776136069-2vqj334ro8pram4ij08legurd8967bg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

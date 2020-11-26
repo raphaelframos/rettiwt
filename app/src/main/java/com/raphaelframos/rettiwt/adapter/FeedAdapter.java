@@ -15,14 +15,11 @@ import com.raphaelframos.rettiwt.R;
 import com.raphaelframos.rettiwt.model.Mensagem;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedViewHolder> {
 
-    private ArrayList<Mensagem> mensagens;
-
-    public FeedAdapter(ArrayList<Mensagem> mensagens){
-        this.mensagens = mensagens;
-    }
+    private List<Mensagem> mensagens = new ArrayList<>();
 
     @NonNull
     @Override
@@ -39,6 +36,11 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedViewHolder
     @Override
     public int getItemCount() {
         return mensagens.size();
+    }
+
+    public void update(List<Mensagem> toObjects) {
+        this.mensagens = toObjects;
+        notifyDataSetChanged();
     }
 
     class FeedViewHolder extends RecyclerView.ViewHolder{

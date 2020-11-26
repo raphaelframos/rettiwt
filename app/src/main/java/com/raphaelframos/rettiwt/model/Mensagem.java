@@ -6,6 +6,8 @@ public class Mensagem {
     private String mensagem;
     private String foto;
 
+    public Mensagem(){}
+
     public Mensagem(String nome, String mensagem, String foto) {
         setFoto(foto);
         setMensagem(mensagem);
